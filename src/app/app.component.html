@@ -1,7 +1,29 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1 title="by Dheeraj Kumar Rao">
-    Welcome to {{ title }}!
-  </h1>
 
+  <!-- <h1 title="by Dheeraj Kumar Rao">
+    Welcome to {{ title }}!
+  </h1> -->
+  <div class="container">
+    <form [formGroup] = "form">
+      <h1>Base Converter</h1>
+      <div class="form-group">
+        <label for="usr">decimal :</label>
+        <input type="text" class="form-control" name="decimal"
+        (ngModelChange)="decimalChange(oldValue, newValue= $event)" formControlName="decimal">
+      </div>
+      <div class="form-group">
+        <label for="usr">binary :</label>
+        <input type="text" class="form-control" name="binary" formControlName="binary">
+      </div>
+      <div class="form-group">
+        <label for="usr">octal :</label>
+        <input type="text" class="form-control" name="octal" formControlName="octal">
+      </div>
+      <div class="form-group">
+        <label for="usr">hexa:</label>
+        <input type="text" class="form-control" name="hexa" formControlName="hexa">
+      </div>
+
+
+    </form>
+  </div>
 
