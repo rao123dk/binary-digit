@@ -12,15 +12,18 @@
       </div>
       <div class="form-group">
         <label for="usr">binary :</label>
-        <input type="text" class="form-control" name="binary" formControlName="binary">
+        <input type="text" class="form-control" name="binary"
+        (ngModelChange)="binaryChange(oldValue, newValue= $event)" formControlName="binary">
       </div>
       <div class="form-group">
         <label for="usr">octal :</label>
-        <input type="text" class="form-control" name="octal" formControlName="octal">
+        <input type="text" class="form-control" name="octal"
+        (ngModelChange)="octalChange(oldValue, newValue= $event)" formControlName="octal">
       </div>
       <div class="form-group">
         <label for="usr">hexa:</label>
-        <input type="text" class="form-control" name="hexa" formControlName="hexa">
+        <input type="text" class="form-control" name="hexa"
+        (ngModelChange)="hexaChange(oldValue, newValue= $event)" formControlName="hexa">
       </div>
 
 
